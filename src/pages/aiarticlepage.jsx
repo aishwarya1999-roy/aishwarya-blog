@@ -6,7 +6,7 @@ const MyButton = ({ variant, size, className, children, onClick }) => {
   let baseClasses = 'inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-200';
   if (size === 'lg') { baseClasses += ' px-6 py-3 text-lg'; } else if (size === 'sm') { baseClasses += ' px-3 py-1.5 text-sm'; } else { baseClasses += ' px-4 py-2 text-base'; }
   if (variant === 'outline') {
-    baseClasses += ' bg-transparent border hover:bg-white/10 text-white border-white/20';
+    baseClasses += ' bg-transparent border hover:bg-white/10';
   } else {
     baseClasses += ' bg-blue-500 text-white hover:bg-blue-600';
   }
@@ -70,7 +70,7 @@ const AIArticlePage = () => {
            <MyButton
                         variant="outline"
                         onClick={toggleTheme}
-                        className={`${isDarkMode ? 'text-gray-300 hover:text-white border-gray-700 hover:bg-gray-800' : 'text-gray-700 hover:text-gray-900 border-gray-300 hover:bg-gray-200'}`}
+                        className={`${isDarkMode ? 'text-gray-300 hover:text-white border-gray-700 hover:bg-gray-800' : 'text-gray-700 hover:text-gray-900 border-gray-700 hover:bg-gray-300'}`}
                     >
                         {isDarkMode ? (<SunMedium className="h-5 w-5" />) : (<Moon className="h-5 w-5" />)}
                         <span className="sr-only">Toggle Theme</span>
@@ -82,7 +82,7 @@ const AIArticlePage = () => {
             The Future of AI: A Comprehensive Overview
           </h2>
           <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-6`}>
-            Published: 2024-07-28 | Category: AI
+            Published: 2025-02-10 | Category: AI
           </p>
           <img src="../ai2.png"  className="w-full h-72 rounded-lg shadow-lg mb-8" />
           <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} prose prose-invert`}>

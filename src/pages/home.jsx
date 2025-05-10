@@ -7,7 +7,7 @@ const MyButton = ({ variant, size, className, children, onClick }) => {
   let baseClasses = 'inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-200';
   if (size === 'lg') { baseClasses += ' px-6 py-3 text-lg'; } else if (size === 'sm') { baseClasses += ' px-3 py-1.5 text-sm'; } else { baseClasses += ' px-4 py-2 text-base'; }
   if (variant === 'outline') {
-    baseClasses += ' bg-transparent border hover:bg-white/10 text-white border-white/20';
+    baseClasses += ' bg-transparent border hover:bg-white/10';
   } else {
     baseClasses += ' bg-blue-500 text-white hover:bg-blue-600';
   }
@@ -20,9 +20,9 @@ const MyButton = ({ variant, size, className, children, onClick }) => {
 };
 
 const featuredPosts = [
-  { id: '1', title: 'The Future of AI: A Comprehensive Overview', summary: 'Explore the exciting advancements and potential challenges in the field of Artificial Intelligence.', category: 'AI', date: '2024-07-28', imageUrl: './ai.png', slug: 'future-of-ai' },
-  { id: '2', title: 'Mastering React Hooks: A Practical Guide', summary: 'Learn how to leverage React Hooks to write cleaner and more efficient code.', category: 'Web Development', date: '2024-07-25', imageUrl: './react.png', slug: 'mastering-react-hooks' },
-  { id: '3', title: 'Building Scalable Systems with Cloud Technologies', summary: 'Discover the best practices for designing and deploying scalable applications in the cloud.', category: 'Cloud', date: '2024-07-21', imageUrl: './cloud.png', slug: 'scalable-systems-cloud' },
+  { id: '1', title: 'The Future of AI: A Comprehensive Overview', summary: 'Explore the exciting advancements and potential challenges in the field of Artificial Intelligence.', category: 'AI', date: '2025-02-10', imageUrl: './ai.png', slug: 'future-of-ai' },
+  { id: '2', title: 'Mastering React Hooks: A Practical Guide', summary: 'Learn how to leverage React Hooks to write cleaner and more efficient code.', category: 'Web Development', date: '2025-03-25', imageUrl: './react.png', slug: 'mastering-react-hooks' },
+  { id: '3', title: 'Building Scalable Systems with Cloud Technologies', summary: 'Discover the best practices for designing and deploying scalable applications in the cloud.', category: 'Cloud', date: '2025-04-21', imageUrl: './cloud.png', slug: 'scalable-systems-cloud' },
 ];
 
 const techCategories = ['AI', 'Web Development', 'Cloud', 'Blockchain', 'Cybersecurity', 'Gadgets'];
@@ -226,7 +226,7 @@ const HomePage = () => {
           <MyButton
             variant="outline"
             onClick={toggleTheme}
-            className={`${isDarkMode ? 'text-gray-300 hover:text-white border-gray-700 hover:bg-gray-800' : 'text-gray-700 hover:text-gray-900 border-gray-300 hover:bg-gray-200'}`}
+            className={`${isDarkMode ? 'text-gray-300 hover:text-white border-gray-700 hover:bg-gray-800' : 'text-gray-700 hover:text-gray-900 border-gray-700 hover:bg-gray-300'}`}
           >
             {isDarkMode ? (<SunMedium className="h-5 w-5" />) : (<Moon className="h-5 w-5" />)}
             <span className="sr-only">Toggle Theme</span>
@@ -251,7 +251,7 @@ const HomePage = () => {
                                 onClick={scrollToLatestPosts}
               className={`${isDarkMode
                 ? 'bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-blue-300 hover:from-blue-500/20 hover:to-purple-500/20 border border-blue-500/30 hover:border-blue-500/50'
-                : 'bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-blue-600 hover:from-blue-500/20 hover:to-purple-500/20 border border-blue-500/30 hover:border-blue-500/50'
+                : 'bg-gradient-to-r from-blue-500/50 to-purple-500/50 text-blue-600 hover:from-blue-500/70 hover:to-purple-500/70 border border-blue-500/30 hover:border-blue-500/50'
                 }`}
             >
               <BookOpen className="mr-2 h-5 w-5" />
@@ -263,7 +263,7 @@ const HomePage = () => {
                                 onClick={scrollToAboutMe}
               className={`${isDarkMode
                 ? 'bg-gradient-to-r from-green-500/10 to-teal-500/10 text-green-300 hover:from-green-500/20 hover:to-teal-500/20 border border-green-500/30 hover:border-green-500/50'
-                : 'bg-gradient-to-r from-green-500/10 to-teal-500/10 text-green-600 hover:from-green-500/20 hover:to-teal-500/20 border border-green-500/30 hover:border-green-500/50'
+                : 'bg-gradient-to-r from-green-500/50 to-teal-500/50 text-green-600 hover:from-green-500/70 hover:to-teal-500/70 border border-green-500/30 hover:border-green-500/50'
                 }`}
             >
               <User className="mr-2 h-5 w-5" />
@@ -308,7 +308,7 @@ const HomePage = () => {
                       size="sm"
                       className={`${isDarkMode
                         ? 'text-blue-300 hover:text-blue-200 hover:bg-blue-500/20 border-blue-500/30'
-                        : 'text-blue-600 hover:text-blue-700 hover:bg-blue-500/10 border-blue-500/30'
+                        : 'text-blue-800 hover:text-blue-900 hover:bg-blue-500/30 border-blue-700/30'
                         }`}
                     >
                       Read More
