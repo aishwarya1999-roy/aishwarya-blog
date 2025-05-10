@@ -84,7 +84,7 @@ const CloudArticlePage = () => {
           <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-6`}>
             Published: 2024-07-26 | Category: Cloud
           </p>
-          <img src="./cloud2.png" alt="Building Scalable Systems" className="w-full h-72 rounded-lg shadow-lg mb-8" />
+          <img src="../cloud2.png" alt="Building Scalable Systems" className="w-full h-72 rounded-lg shadow-lg mb-8" />
           <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} prose prose-invert`}>
             <p>
               In today's digital age, scalability is a critical requirement for any

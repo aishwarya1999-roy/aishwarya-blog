@@ -8,7 +8,7 @@ import CloudArticlePage from './pages/cloud';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/aishwarya-blog">
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />

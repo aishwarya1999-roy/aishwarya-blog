@@ -84,7 +84,7 @@ const AIArticlePage = () => {
           <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-6`}>
             Published: 2024-07-28 | Category: AI
           </p>
-          <img src="./ai2.png"  className="w-full h-72 rounded-lg shadow-lg mb-8" />
+          <img src="../ai2.png"  className="w-full h-72 rounded-lg shadow-lg mb-8" />
           <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} prose prose-invert`}>
             <p>
               Artificial Intelligence (AI) is rapidly transforming our world, and its future

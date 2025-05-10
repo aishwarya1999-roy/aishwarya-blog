@@ -85,7 +85,7 @@ const ReactHooksArticlePage = () => {
           <p className={`${isDarkMode ? 'text-gray-400' : 'text-gray-600'} mb-6`}>
             Published: 2024-07-25 | Category: Web Development
           </p>
-          <img src="./react2.png" alt="Mastering React Hooks" className="w-full h-80 rounded-lg shadow-lg mb-8" />
+          <img src="../react2.png" alt="Mastering React Hooks" className="w-full h-80 rounded-lg shadow-lg mb-8" />
           <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} prose prose-invert`}>
             <p>
               React Hooks are a powerful feature introduced in React 16.8. They allow
